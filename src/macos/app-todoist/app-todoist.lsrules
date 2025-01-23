@@ -1,0 +1,33 @@
+{
+  "description" : "",
+  "name" : "app-todoist",
+  "rules" : [
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "identifier.S3DD273774\/com.todoist.mac.Todoist",
+      "protocol" : "tcp",
+      "remote-hosts" : [
+        "todoist.com",
+        "app.todoist.com",
+        "feat-flags.todoist.net",
+        "nel-sink.todoist.net",
+        "app.todoist.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "identifier.S3DD273774\/com.todoist.mac.Todoist",
+      "protocol" : "udp",
+      "remote-hosts" : [
+        "todoist.com",
+        "app.todoist.com",
+        "feat-flags.todoist.net",
+        "nel-sink.todoist.net",
+        "app.todoist.com"
+      ]
+    }
+  ]
+}
+
